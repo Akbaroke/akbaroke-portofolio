@@ -3,7 +3,7 @@ import { Link, useLocation } from 'react-router-dom';
 import { Switch, Group } from '@mantine/core';
 import { IoSunny, IoIosMoon } from 'react-icons/all';
 import { useEffect, useState } from 'react';
-import useTheme from '../globalState/theme';
+import useTheme from '../../globalState/theme';
 
 type Mode = 'light' | 'dark';
 
@@ -29,7 +29,7 @@ export default function Navbar() {
   }, [theme]);
 
   return (
-    <nav className="bg-white px-5 border-b border-gray-100 dark:bg-[#1A1B1E] dark:border-gray-800 sticky top-0">
+    <nav id="navbar" className="bg-white px-5 border-b border-gray-100 dark:bg-[#1A1B1E] dark:border-gray-800 sticky top-0">
       <div className="flex items-center justify-between w-full max-w-4xl m-auto">
         <Topbar />
         <Group>

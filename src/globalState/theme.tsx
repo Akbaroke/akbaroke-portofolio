@@ -1,5 +1,5 @@
 import { create } from 'zustand';
-import { ThemeState } from '../components/Navbar';
+import { ThemeState } from '../components/templates/Navbar';
 
 const initialTheme = localStorage.getItem('theme');
 
