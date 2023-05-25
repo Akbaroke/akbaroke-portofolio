@@ -1,7 +1,8 @@
 import { SimpleGrid, Tabs, Text } from '@mantine/core';
 import MotionPage from '../components/MotionPage';
-import { skillCategories, skills } from '../data/skills.d';
 import SkillCard from '../components/SkillCard';
+import { skillCategories } from '../data/Skills/skillCategories';
+import { skills } from '../data/Skills/skills';
 
 export default function Skills() {
   return (
@@ -12,7 +13,7 @@ export default function Skills() {
       <Tabs defaultValue="language" variant="pills" color="blue" mt="md">
         <Tabs.List grow>
           {skillCategories.map((category) => (
-            <Tabs.Tab value={category.toLowerCase()} key={category} className="text-black dark:text-white  hover:dark:bg-gray-200/10">
+            <Tabs.Tab value={category.toLowerCase()} key={category} className="text-black dark:text-white hover:dark:bg-blue-500/50 ">
               {category}
             </Tabs.Tab>
           ))}
@@ -25,7 +26,7 @@ export default function Skills() {
                 { minWidth: 0, cols: 2 },
                 { minWidth: 'sm', cols: 3 },
                 { minWidth: 'md', cols: 3 },
-                { minWidth: 'lg', cols: 4 },
+                { minWidth: 'lg', cols: 3 },
               ]}
               spacing="lg">
               {skills

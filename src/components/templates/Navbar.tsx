@@ -29,9 +29,10 @@ export default function Navbar() {
   }, [theme]);
 
   return (
-    <nav id="navbar" className="bg-white px-5 border-b border-gray-100 dark:bg-[#1A1B1E] dark:border-gray-800 sticky top-0">
+    <nav id="navbar" className="bg-white px-5 border-b border-gray-100 dark:bg-[#1A1B1E] dark:border-gray-800 sticky top-0 z-50">
       <div className="flex items-center justify-between w-full max-w-4xl m-auto">
         <Topbar />
+        <SideBar />
         <Group>
           <Switch color="gray" checked={mode === 'dark'} onChange={toggleColorScheme} size="md" onLabel={<IoSunny className="text-yellow-300 w-4 h-4" />} offLabel={<IoIosMoon className="text-blue-600 w-4 h-4" />} />
         </Group>
@@ -44,7 +45,7 @@ function Topbar() {
   const location = useLocation();
 
   return (
-    <div className="flex h-16 items-center">
+    <div className="sm:flex h-16 items-center hidden">
       <Link to="/" className={clsx(def, location.pathname === '/' ? active : nonactive)}>
         Home
       </Link>
@@ -64,6 +65,10 @@ function Topbar() {
   );
 }
 
+function SideBar() {
+  return <div className="h-16 sm:hidden">=</div>;
+}
+
 const active = 'text-blue-600 hover:bg-blue-100/50 dark:text-blue-400 dark:hover:bg-blue-100/10';
 const nonactive = 'hover:bg-gray-200/50 dark:text-gray-200 dark:hover:bg-gray-200/10';
-const def = 'py-2 px-4 rounded-md font-semibold text-sm  active:scale-90';
+const def = 'py-2 px-4 rounded-md font-semibold text-sm active:scale-90';

@@ -1,6 +1,6 @@
 import { Tooltip } from '@mantine/core';
-import { Skill } from '../data/skills';
 import MotionPage from './MotionPage';
+import { Skill } from '../data/Skills/skill';
 
 export default function SkillCard({ data, delay }: { data: Skill; delay: number }) {
   return (

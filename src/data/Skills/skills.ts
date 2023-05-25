@@ -1,11 +1,4 @@
-export interface Skill {
-  name: string;
-  category: (typeof skillCategories)[number];
-  icon: string;
-  show?: boolean;
-}
-
-export const skillCategories = ['Language', 'Framework/Library', 'UI Framework/Component', 'DBMS', 'Tools'] as const;
+import { Skill } from './skill';
 
 export const skills: Skill[] = [
   {
@@ -57,6 +50,11 @@ export const skills: Skill[] = [
     name: 'Nextjs',
     category: 'Framework/Library',
     icon: 'next.svg',
+  },
+  {
+    name: 'Socket',
+    category: 'Framework/Library',
+    icon: 'socket.svg',
   },
   {
     name: 'Nodejs',
@@ -112,6 +110,11 @@ export const skills: Skill[] = [
     name: 'Mantine',
     category: 'UI Framework/Component',
     icon: 'mantine.svg',
+  },
+  {
+    name: 'SCSS',
+    category: 'UI Framework/Component',
+    icon: 'scss.svg',
   },
   {
     name: 'Mysql',
