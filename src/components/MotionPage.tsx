@@ -4,11 +4,12 @@ type Props = {
   className?: string;
   children: JSX.Element | JSX.Element[];
   type?: 'right' | 'bottom';
+  delay?: number;
 };
 
-export default function MotionPage({ children, className, type }: Props) {
+export default function MotionPage({ children, className, type, delay }: Props) {
   return (
-    <m.div variants={type === 'bottom' ? bottom : right} initial="hidden" animate="enter" exit="exit" transition={{ ease: 'easeInOut', duration: 0.75 }} className={className}>
+    <m.div variants={type === 'bottom' ? bottom : right} initial="hidden" animate="enter" exit="exit" transition={{ ease: 'easeInOut', duration: 0.75, delay }} className={className}>
       {children}
     </m.div>
   );

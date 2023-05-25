@@ -1,5 +1,7 @@
 import { SimpleGrid, Tabs, Text } from '@mantine/core';
 import MotionPage from '../components/MotionPage';
+import { skillCategories, skills } from '../data/skills.d';
+import SkillCard from '../components/SkillCard';
 
 export default function Skills() {
   return (
@@ -10,7 +12,7 @@ export default function Skills() {
       <Tabs defaultValue="language" variant="pills" color="blue" mt="md">
         <Tabs.List grow>
           {skillCategories.map((category) => (
-            <Tabs.Tab value={category.toLowerCase()} key={category}>
+            <Tabs.Tab value={category.toLowerCase()} key={category} className="text-black dark:text-white  hover:dark:bg-gray-200/10">
               {category}
             </Tabs.Tab>
           ))}
@@ -28,10 +30,8 @@ export default function Skills() {
               spacing="lg">
               {skills
                 .filter((skill) => skill.category === category && skill.show !== false)
-                .map((skill) => (
-                  <div key={skill.name}>
-                    <img src={`./public/assets/${skill.icon}`} alt={skill.name} about={skill.name} />
-                  </div>
+                .map((skill, i) => (
+                  <SkillCard data={skill} key={i} delay={i * 0.2} />
                 ))}
             </SimpleGrid>
           </Tabs.Panel>
@@ -41,152 +41,4 @@ export default function Skills() {
   );
 }
 
-const skillCategories = ['Language', 'Framework/Library', 'UI Framework/Component', 'DBMS', 'Tools'] as const;
-const skills: Skill[] = [
-  {
-    name: 'HTML',
-    category: 'Language',
-    icon: 'html.svg',
-  },
-  {
-    name: 'CSS',
-    category: 'Language',
-    icon: 'css.svg',
-  },
-  {
-    name: 'JavaScript',
-    category: 'Language',
-    icon: 'js.svg',
-  },
-  {
-    name: 'TypeScript',
-    category: 'Language',
-    icon: 'ts.svg',
-  },
-  {
-    name: 'PHP',
-    category: 'Language',
-    icon: 'php.svg',
-  },
-  {
-    name: 'Python',
-    category: 'Language',
-    icon: 'python.svg',
-  },
-  {
-    name: 'Java',
-    category: 'Language',
-    icon: 'java.svg',
-  },
-  {
-    name: 'Dart',
-    category: 'Language',
-    icon: 'dart.svg',
-  },
-  {
-    name: 'React',
-    category: 'Framework/Library',
-    icon: 'react.svg',
-  },
-  {
-    name: 'React Native',
-    category: 'Framework/Library',
-    icon: 'react.svg',
-  },
-  {
-    name: 'Nextjs',
-    category: 'Framework/Library',
-    icon: 'next.svg',
-  },
-  {
-    name: 'Nodejs',
-    category: 'Framework/Library',
-    icon: 'node.svg',
-  },
-  {
-    name: 'Expressjs',
-    category: 'Framework/Library',
-    icon: 'express.svg',
-  },
-  {
-    name: 'Codeigniter',
-    category: 'Framework/Library',
-    icon: 'ci.svg',
-  },
-  {
-    name: 'Flutter',
-    category: 'Framework/Library',
-    icon: 'flutter.svg',
-  },
-  {
-    name: 'Java Swing',
-    category: 'Framework/Library',
-    icon: 'java.svg',
-  },
-  {
-    name: 'tkinter',
-    category: 'Framework/Library',
-    icon: 'python.svg',
-  },
-  {
-    name: 'Bootstrap',
-    category: 'UI Framework/Component',
-    icon: 'bootstrap.svg',
-  },
-  {
-    name: 'Tailwind CSS',
-    category: 'UI Framework/Component',
-    icon: 'tailwind.svg',
-  },
-  {
-    name: 'daisyUi',
-    category: 'UI Framework/Component',
-    icon: 'daisy.svg',
-  },
-  {
-    name: 'Mantine',
-    category: 'UI Framework/Component',
-    icon: 'mantine.svg',
-  },
-  {
-    name: 'Mysql',
-    category: 'DBMS',
-    icon: 'mysql.svg',
-  },
-  {
-    name: 'Firestore',
-    category: 'DBMS',
-    icon: 'firestore.svg',
-  },
-  {
-    name: 'Vs Code',
-    category: 'Tools',
-    icon: 'vscode.svg',
-  },
-  {
-    name: 'Netbeans',
-    category: 'Tools',
-    icon: 'netbeans.svg',
-  },
-  {
-    name: 'Postman',
-    category: 'Tools',
-    icon: 'postman.svg',
-  },
-  {
-    name: 'XAMPP',
-    category: 'Tools',
-    icon: 'xampp.svg',
-  },
-  {
-    name: 'Figma',
-    category: 'Tools',
-    icon: 'figma.svg',
-  },
-];
-interface Skill {
-  name: string;
-  category: (typeof skillCategories)[number];
-  icon: string;
-  show?: boolean;
-}
+
