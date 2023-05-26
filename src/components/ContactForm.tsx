@@ -7,7 +7,6 @@ import { BsFillCheckCircleFill, IoIosCloseCircle } from 'react-icons/all';
 import axios from 'axios';
 const env = import.meta.env;
 
-
 export default function ContactForm() {
   const [isLoading, setIsLoading] = useState<boolean>(false);
 
