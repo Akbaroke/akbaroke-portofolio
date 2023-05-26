@@ -82,6 +82,26 @@ export const projects: Project[] = [
     tech: ['HTML', 'CSS', 'JavaScript'],
   },
   {
+    name: 'Simple Stop Watch',
+    category: 'Website',
+    desc: 'Simple timer that can mark the desired time',
+    link: {
+      demo: 'https://akbaroke.github.io/simple-timer/',
+      repo: 'https://github.com/Akbaroke/simple-timer',
+    },
+    tech: ['HTML', 'CSS', 'JavaScript'],
+  },
+  {
+    name: 'Profile Portofolio v1',
+    category: 'Website',
+    desc: 'Use Parallax Effect and GSAP',
+    link: {
+      demo: 'https://akbaroke.github.io/my-portfolio/',
+      repo: 'https://github.com/Akbaroke/my-portfolio',
+    },
+    tech: ['HTML', 'CSS', 'JavaScript'],
+  },
+  {
     name: 'Coarse Word Detection',
     category: 'Bot',
     desc: 'Can detect every harsh word in the chat',
@@ -90,5 +110,25 @@ export const projects: Project[] = [
       repo: 'https://github.com/Akbaroke/bot-wa-aktif',
     },
     tech: ['Nodejs', 'JavaScript'],
+  },
+  {
+    name: 'Store Cashier',
+    category: 'GUI',
+    desc: 'Casir is a multi-user system and can customize store names.',
+    link: {
+      demo: null,
+      repo: 'https://github.com/Akbaroke/guiTokoSembako-Jframe',
+    },
+    tech: ['Java Swing', 'Mysql'],
+  },
+  {
+    name: 'Grocery Store App',
+    category: 'GUI',
+    desc: 'Admin and cashier view without dbms.',
+    link: {
+      demo: 'https://youtu.be/fWjcSKjfsJ0',
+      repo: null,
+    },
+    tech: ['tkinter'],
   },
 ];

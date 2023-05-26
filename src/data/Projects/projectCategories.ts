@@ -1,7 +1,7 @@
 export const projectCategories = [
   'Website',
-  'API',
+  // 'API',
   'GUI',
   'Bot',
-  'UI/UX',
+  // 'UI/UX',
 ] as const;

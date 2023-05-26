@@ -27,14 +27,14 @@ export default function About() {
               Muhammad Akbar
             </Text>
             <Text size="md" my="sm">
-              Hi everyone, my name is Muhammad Akbar. I am a Frontend Web F Developer Mobile Developer, UI/UX Designer and Computer Science Student.
+              Hi everyone, my name is Muhammad Akbar. I am a Frontend Web Developer, Mobile Developer, UI/UX Designer and Computer Science Student.
             </Text>
             <Text size="md" my="sm">
               I live in Cikarang, Indonesia. I was born in Bandung, September 15 2001. I am 21 years old. I am a Computer Science Student from Pelita Bangsa University.
             </Text>
             <Text size="md" my="sm">
               Coding has been my passion and hobby since I was 18 years old, and I have loved computers since I was a kid. Besides coding, I like listening to music. I also like to play games. My favorite genre is First Person Shooters. I
-              spend a lot of time on TikTok sharing demo videos of apps I build or coding tips.
+              spend a lot of time on TikTok sharing demo videos of apps.
             </Text>
           </MotionPage>
         </Grid.Col>
@@ -95,7 +95,7 @@ export default function About() {
                 <List.Item className="dark:text-gray-400 list-disc">Deploy to the hosting server</List.Item>
               </List>
               <Text size="sm" color="dimmed" mt={4}>
-                Oct 2022 - Sep 2022
+                Aug 2022 - Sep 2022
               </Text>
             </Timeline.Item>
           </Timeline>

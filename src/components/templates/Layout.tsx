@@ -7,7 +7,7 @@ import FormatCapitalize from '../../utils/FormatCapitalize';
 export default function Layout({ children }: { children: JSX.Element }) {
   const location = useLocation();
   const format = FormatCapitalize(location.pathname.replace('/', ''));
-  const title = format ? format + ' | Muhammad Akbar' : 'Muhammad Akbar';
+  const title = format ? format + ' | Muhammad Akbar' : 'Muhammad Akbar | Frontend Developer';
 
   return (
     <main className="bg-[#F8F9FA] dark:bg-[#141517] min-h-screen dark:text-white">
