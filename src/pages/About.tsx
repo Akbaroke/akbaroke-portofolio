@@ -3,6 +3,7 @@ import { Box, Center, Grid, List, Text, Timeline } from '@mantine/core';
 import { ThemeState } from '../components/templates/Navbar';
 import useTheme from '../globalState/theme';
 import { Link } from 'react-router-dom';
+import getImgUrl from '../assets/getImgUrl';
 
 export default function About() {
   const theme = useTheme((state) => (state as ThemeState).theme);
@@ -13,7 +14,7 @@ export default function About() {
         <Grid.Col xs={12} md={3} orderXs={1} orderMd={2}>
           <MotionPage type="bottom">
             <Center sx={{ paddingTop: '1.5rem' }}>
-              <img src="./public/akbar.jpg" alt="akbaroke" width={150} height={150} className="rounded-full shadow-lg dark:shadow-gray-700/50 mt-5" />
+              <img src={getImgUrl('akbar.jpg')} alt="akbaroke" width={150} height={150} className="rounded-full shadow-lg dark:shadow-gray-700/50 mt-5" />
             </Center>
           </MotionPage>
         </Grid.Col>

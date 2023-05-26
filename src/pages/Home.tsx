@@ -3,6 +3,7 @@ import MotionPage from '../components/MotionPage';
 import { Text } from '@mantine/core';
 import useTheme from '../globalState/theme';
 import { ThemeState } from '../components/templates/Navbar';
+import getImgUrl from '../assets/getImgUrl';
 
 export default function Home() {
   const theme = useTheme((state) => (state as ThemeState).theme);
@@ -25,7 +26,7 @@ export default function Home() {
         </MotionPage>
       </div>
       <MotionPage type="bottom" delay={1.8}>
-        <img src="./public/akbar.jpg" alt="akbaroke" className="w-40 h-40 sm:w-52 sm:h-52 rounded-full shadow-lg dark:shadow-gray-700/50 relative -bottom-16" />
+        <img src={getImgUrl('akbar.jpg')} alt="akbaroke" className="w-40 h-40 sm:w-52 sm:h-52 rounded-full shadow-lg dark:shadow-gray-700/50 relative -bottom-16" />
       </MotionPage>
     </div>
   );
