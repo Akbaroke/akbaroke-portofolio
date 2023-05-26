@@ -2334,11 +2334,6 @@ tailwindcss@^3.3.2:
     resolve "^1.22.2"
     sucrase "^3.32.0"
 
-telegram-message-send@^1.1.1:
-  version "1.1.1"
-  resolved "https://registry.yarnpkg.com/telegram-message-send/-/telegram-message-send-1.1.1.tgz#b0d91f4f80305a553050f854ee033c28708aac52"
-  integrity sha512-IoMOqX9oT9K/3TIIPYTz5Z7I5PIJvtjWGFF7vkWqPiCtlE+iIEULKUIUs5MaQe5QN59UaBrD0E34d852dqEI4w==
-
 text-table@^0.2.0:
   version "0.2.0"
   resolved "https://registry.npmjs.org/text-table/-/text-table-0.2.0.tgz"

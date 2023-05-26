@@ -3,16 +3,10 @@ import { TextInput, Button, Box, Group, Textarea } from '@mantine/core';
 import { FiSend } from 'react-icons/fi';
 import { useState } from 'react';
 import { notifications } from '@mantine/notifications';
-import { telegramSendMessage } from 'telegram-message-send';
 import { BsFillCheckCircleFill, IoIosCloseCircle } from 'react-icons/all';
 import axios from 'axios';
 const env = import.meta.env;
 
-interface DataMessage {
-  name: string;
-  email: string;
-  message: string;
-}
 
 export default function ContactForm() {
   const [isLoading, setIsLoading] = useState<boolean>(false);
