@@ -1,7 +1,7 @@
 import { Tooltip } from '@mantine/core';
 import MotionPage from './MotionPage';
 import { Skill } from '../data/Skills/skill';
-import getImgUrl from '../assets/getImgUrl';
+import getImgUrl from '../../public/assets/getImgUrl';
 
 export default function SkillCard({ data, delay }: { data: Skill; delay: number }) {
   return (

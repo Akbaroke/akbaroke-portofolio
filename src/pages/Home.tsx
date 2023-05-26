@@ -3,7 +3,7 @@ import MotionPage from '../components/MotionPage';
 import { Text } from '@mantine/core';
 import useTheme from '../globalState/theme';
 import { ThemeState } from '../components/templates/Navbar';
-import getImgUrl from '../assets/getImgUrl';
+import getImgUrl from '../../public/assets/getImgUrl';
 
 export default function Home() {
   const theme = useTheme((state) => (state as ThemeState).theme);

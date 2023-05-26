@@ -3,7 +3,7 @@ import { Box, Center, Grid, List, Text, Timeline } from '@mantine/core';
 import { ThemeState } from '../components/templates/Navbar';
 import useTheme from '../globalState/theme';
 import { Link } from 'react-router-dom';
-import getImgUrl from '../assets/getImgUrl';
+import getImgUrl from '../../public/assets/getImgUrl';
 
 export default function About() {
   const theme = useTheme((state) => (state as ThemeState).theme);

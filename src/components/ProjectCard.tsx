@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 import { BiGitRepoForked } from 'react-icons/bi';
 import { FiExternalLink } from 'react-icons/fi';
 import { skills } from '../data/Skills/skills';
-import getImgUrl from '../assets/getImgUrl';
+import getImgUrl from '../../public/assets/getImgUrl';
 
 export default function ProjectCard({ data, delay }: { data: Project; delay: number }) {
   const index = delay / 0.2;
