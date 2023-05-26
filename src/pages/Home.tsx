@@ -8,7 +8,7 @@ export default function Home() {
   const theme = useTheme((state) => (state as ThemeState).theme);
 
   return (
-    <div className="flex sm:flex-wrap flex-wrap-reverse sm:gap-5 gap-1 h-[500px] sm:h-[700px] sm:justify-around justify-center items-center">
+    <div className="flex sm:flex-wrap flex-wrap-reverse sm:gap-5 gap-1 h-[500px] sm:h-[700px] sm:justify-around justify-center items-center px-5 sm:p-0">
       <div className="text-start">
         <MotionPage delay={0.2}>
           <h1 className="font-black text-4xl">Muhammad Akbar</h1>
@@ -24,8 +24,8 @@ export default function Home() {
           </div>
         </MotionPage>
       </div>
-      <MotionPage type='bottom' delay={1.8}>
-        <img src="./public/akbar.jpg" alt="akbaroke" className="w-52 h-52 rounded-full shadow-lg dark:shadow-gray-700/50" />
+      <MotionPage type="bottom" delay={1.8}>
+        <img src="./public/akbar.jpg" alt="akbaroke" className="w-40 h-40 sm:w-52 sm:h-52 rounded-full shadow-lg dark:shadow-gray-700/50" />
       </MotionPage>
     </div>
   );

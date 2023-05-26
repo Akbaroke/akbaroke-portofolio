@@ -8,7 +8,7 @@ export default function About() {
   const theme = useTheme((state) => (state as ThemeState).theme);
 
   return (
-    <div className="py-7">
+    <div className="py-7 px-5 sm:p-0">
       <Grid>
         <Grid.Col xs={12} md={3} orderXs={1} orderMd={2}>
           <MotionPage type="bottom">
