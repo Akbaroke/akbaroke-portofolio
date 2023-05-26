@@ -5,6 +5,7 @@ import { Link } from 'react-router-dom';
 import { BiGitRepoForked } from 'react-icons/bi';
 import { FiExternalLink } from 'react-icons/fi';
 import { skills } from '../data/Skills/skills';
+import getImgUrl from '../assets/getImgUrl';
 
 export default function ProjectCard({ data, delay }: { data: Project; delay: number }) {
   const index = delay / 0.2;
@@ -51,7 +52,7 @@ export default function ProjectCard({ data, delay }: { data: Project; delay: num
             .map((skill) => (
               <Box key={skill.name} sx={{ position: 'relative', height: 25, width: 25 }} title={skill.name}>
                 <img
-                  src={`./public/assets/${skill.icon}`}
+                  src={getImgUrl(skill.icon)}
                   alt={skill.name}
                   sizes="(max-width: 768px) 8vw,
                     (max-width: 1200px) 16vw,
