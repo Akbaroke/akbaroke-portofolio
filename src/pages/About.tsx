@@ -3,21 +3,9 @@ import { Box, Center, Grid, List, Text, Timeline } from '@mantine/core';
 import { ThemeState } from '../components/templates/Navbar';
 import useTheme from '../globalState/theme';
 import getImgUrl from '../../public/assets/getImgUrl';
-import { IoIosCloseCircle } from 'react-icons/io';
-import { notifications } from '@mantine/notifications';
 
 export default function About() {
   const theme = useTheme((state) => (state as ThemeState).theme);
-
-  const handleResumeNotReady = () => {
-    notifications.show({
-      color: 'red',
-      title: 'Error',
-      message: 'Sorry 🙏🏻 Resume is not ready!',
-      icon: <IoIosCloseCircle />,
-      autoClose: 3000,
-    });
-  };
 
   return (
     <div className="py-7 px-5 sm:px-0">
@@ -120,7 +108,7 @@ export default function About() {
           </Text>
           <Box>
             You can read my resume{' '}
-            <a onClick={handleResumeNotReady} className="underline text-blue-400 cursor-pointer">
+            <a href="https://drive.google.com/file/d/1mmvWurMrcAFuw8sACrPJ3AH321CapAJz/view?usp=sharing" target="_blank" className="underline text-blue-400 cursor-pointer">
               here.
             </a>
           </Box>
