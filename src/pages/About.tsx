@@ -20,7 +20,7 @@ export default function About() {
   };
 
   return (
-    <div className="py-7 px-5 sm:p-0">
+    <div className="py-7 px-5 sm:px-0">
       <Grid>
         <Grid.Col xs={12} md={3} orderXs={1} orderMd={2}>
           <MotionPage type="bottom">

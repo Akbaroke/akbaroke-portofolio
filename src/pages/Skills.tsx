@@ -6,7 +6,7 @@ import { skills } from '../data/Skills/skills';
 
 export default function Skills() {
   return (
-    <MotionPage className="py-7 px-5 sm:p-0 pb-20" type="bottom">
+    <MotionPage className="py-7 px-5 sm:px-0 pb-20" type="bottom">
       <Text size={42} weight="bold">
         Skills
       </Text>
