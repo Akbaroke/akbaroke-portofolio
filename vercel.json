@@ -1,9 +1,9 @@
 {
-  "routes": [
-    { "src": "/", "dest": "/" },
-    { "src": "/about", "dest": "/about" },
-    { "src": "/skills", "dest": "/skills" },
-    { "src": "/projects", "dest": "/projects" },
-    { "src": "/contact", "dest": "/contact" }
+  "rewrites": [
+    { "source": "/(.*)", "destination": "/" },
+    { "source": "/about", "destination": "/about" },
+    { "source": "/skills", "destination": "/skills" },
+    { "source": "/projects", "destination": "/projects" },
+    { "source": "/contact", "destination": "/contact" }
   ]
 }
