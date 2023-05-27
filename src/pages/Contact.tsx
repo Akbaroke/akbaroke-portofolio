@@ -1,6 +1,6 @@
 import { Text, Timeline, Tooltip } from '@mantine/core';
 import MotionPage from '../components/MotionPage';
-import { AiOutlineMessage, FiGithub, FiInstagram, GrLinkedinOption, RiUserFollowLine } from 'react-icons/all';
+import { AiOutlineMessage, FaTiktok, FiGithub, FiInstagram, GrLinkedinOption, RiUserFollowLine } from 'react-icons/all';
 import ContactForm from '../components/ContactForm';
 
 export default function Contact() {
@@ -20,21 +20,43 @@ export default function Contact() {
             </Text>
           }>
           <div className="flex justify-start items-center gap-5">
-            <Tooltip label="Instagram" color="gray" withArrow position="bottom">
-              <a href="https://www.instagram.com/akbar.833" className="flex flex-col gap-1 justify-center items-center">
-                <FiInstagram className="inline-block box-content bg-white p-2 border rounded-lg text-2xl text-gray-600 hover:text-white hover:bg-gradient-to-br hover:from-purple-600 hover:via-pink-500 hover:to-red-500 transition-all shadow-md hover:shadow-none" />
-              </a>
-            </Tooltip>
-            <Tooltip label="Github" color="gray" withArrow position="bottom">
-              <a href="https://github.com/akbaroke" className="inline-block box-content bg-white p-2 border rounded-lg text-2xl text-gray-600 hover:text-white hover:bg-black transition-all shadow-md hover:shadow-none">
-                <FiGithub />
-              </a>
-            </Tooltip>
-            <Tooltip label="Linkedin" color="gray" withArrow position="bottom">
-              <a href="https://www.linkedin.com/in/akbaroke/">
-                <GrLinkedinOption className="inline-block box-content bg-white p-2 border rounded-lg text-2xl text-gray-600 hover:text-white hover:bg-[#0A66C2] transition-all shadow-md hover:shadow-none" />
-              </a>
-            </Tooltip>
+            <MotionPage delay={0.7} type="bottom">
+              <Tooltip label="Instagram" color="gray" withArrow position="bottom">
+                <a
+                  href="https://www.instagram.com/akbar.833"
+                  target="_blank"
+                  className="inline-block box-content bg-white p-2 border rounded-lg text-2xl text-gray-600 hover:text-white hover:bg-gradient-to-br hover:from-purple-600 hover:via-pink-500 hover:to-red-500 transition-all shadow-md hover:shadow-none">
+                  <FiInstagram />
+                </a>
+              </Tooltip>
+            </MotionPage>
+            <MotionPage delay={1} type="bottom">
+              <Tooltip label="Github" color="gray" withArrow position="bottom">
+                <a href="https://github.com/akbaroke" target="_blank" className="inline-block box-content bg-white p-2 border rounded-lg text-2xl text-gray-600 hover:text-white hover:bg-black transition-all shadow-md hover:shadow-none">
+                  <FiGithub />
+                </a>
+              </Tooltip>
+            </MotionPage>
+            <MotionPage delay={1.3} type="bottom">
+              <Tooltip label="Linkedin" color="gray" withArrow position="bottom">
+                <a
+                  href="https://www.linkedin.com/in/akbaroke/"
+                  target="_blank"
+                  className="inline-block box-content bg-white p-2 border rounded-lg text-2xl text-gray-600 hover:text-white hover:bg-[#0A66C2] transition-all shadow-md hover:shadow-none">
+                  <GrLinkedinOption />
+                </a>
+              </Tooltip>
+            </MotionPage>
+            <MotionPage delay={1.6} type="bottom">
+              <Tooltip label="Tiktok" color="gray" withArrow position="bottom">
+                <a
+                  href="https://www.tiktok.com/@cungukwow"
+                  target="_blank"
+                  className="inline-block box-content bg-white p-2 border rounded-lg text-2xl text-gray-600 hover:text-white hover:bg-black transition-all shadow-md hover:shadow-none">
+                  <FaTiktok />
+                </a>
+              </Tooltip>
+            </MotionPage>
           </div>
         </Timeline.Item>
         <Timeline.Item

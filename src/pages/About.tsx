@@ -2,11 +2,22 @@ import MotionPage from '../components/MotionPage';
 import { Box, Center, Grid, List, Text, Timeline } from '@mantine/core';
 import { ThemeState } from '../components/templates/Navbar';
 import useTheme from '../globalState/theme';
-import { Link } from 'react-router-dom';
 import getImgUrl from '../../public/assets/getImgUrl';
+import { IoIosCloseCircle } from 'react-icons/io';
+import { notifications } from '@mantine/notifications';
 
 export default function About() {
   const theme = useTheme((state) => (state as ThemeState).theme);
+
+  const handleResumeNotReady = () => {
+    notifications.show({
+      color: 'red',
+      title: 'Error',
+      message: 'Sorry 🙏🏻 Resume is not ready!',
+      icon: <IoIosCloseCircle />,
+      autoClose: 3000,
+    });
+  };
 
   return (
     <div className="py-7 px-5 sm:p-0">
@@ -109,9 +120,9 @@ export default function About() {
           </Text>
           <Box>
             You can read my resume{' '}
-            <Link target="_blank" to="github.com/Akbaroke" className="underline text-blue-400">
+            <a onClick={handleResumeNotReady} className="underline text-blue-400 cursor-pointer">
               here.
-            </Link>
+            </a>
           </Box>
         </MotionPage>
       </Box>

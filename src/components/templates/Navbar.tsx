@@ -79,4 +79,4 @@ function BurgerButton() {
 
 const active = 'text-blue-600 hover:bg-blue-100/50 dark:text-blue-400 dark:hover:bg-blue-100/10';
 const nonactive = 'hover:bg-gray-200/50 dark:text-gray-200 dark:hover:bg-gray-200/10';
-const def = 'py-2 px-4 rounded-md font-semibold text-sm active:scale-90 w-full';
+const def = 'py-2 px-4 rounded-md font-semibold text-xl sm:text-[17px] active:scale-90 w-full';

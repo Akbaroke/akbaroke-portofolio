@@ -5,6 +5,7 @@ import { useState } from 'react';
 import { notifications } from '@mantine/notifications';
 import { BsFillCheckCircleFill, IoIosCloseCircle } from 'react-icons/all';
 import axios from 'axios';
+import MotionPage from './MotionPage';
 const env = import.meta.env;
 
 export default function ContactForm() {
@@ -73,15 +74,21 @@ export default function ContactForm() {
     <Box mt="md" mx={30}>
       <form onSubmit={form.onSubmit(handleSendMessage)}>
         <Group grow mt="sm" sx={{ display: 'flex', alignItems: 'start' }}>
-          <TextInput placeholder="Your name" label="Full name" size="md" withAsterisk {...form.getInputProps('name')} />
-          <TextInput placeholder="Your Email" label="Email" size="md" withAsterisk {...form.getInputProps('email')} />
+          <MotionPage delay={1.9} type="left">
+            <TextInput placeholder="Your name" label="Full name" size="md" withAsterisk {...form.getInputProps('name')} />
+          </MotionPage>
+          <MotionPage delay={2.1} type="right">
+            <TextInput placeholder="Your Email" label="Email" size="md" withAsterisk {...form.getInputProps('email')} />
+          </MotionPage>
         </Group>
-        <Group grow mt="sm">
-          <Textarea placeholder="Your message" label="Message" size="md" withAsterisk {...form.getInputProps('message')} />
-        </Group>
-        <Button type="submit" leftIcon={<FiSend />} mt="sm" className="bg-blue-400" loading={isLoading}>
-          Send
-        </Button>
+        <MotionPage delay={2.4} type="bottom">
+          <Group grow mt="sm">
+            <Textarea placeholder="Your message" label="Message" size="md" withAsterisk {...form.getInputProps('message')} />
+          </Group>
+          <Button type="submit" leftIcon={<FiSend />} mt="sm" className="bg-blue-400" loading={isLoading}>
+            Send
+          </Button>
+        </MotionPage>
       </form>
     </Box>
   );
