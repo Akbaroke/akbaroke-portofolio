@@ -2,3 +2,4 @@
 tsconfig.json
 tsconfig.node.json
 tailwind.config.js
+package.json

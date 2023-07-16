@@ -2,6 +2,16 @@ import { Project } from './project';
 
 export const projects: Project[] = [
   {
+    name: 'Tiket Bus id',
+    category: 'Website',
+    desc: 'bus ticket booking application that has features with admin and user views.',
+    link: {
+      demo: 'https://tiket-id.vercel.app/',
+      repo: 'https://github.com/Akbaroke/ticket-order',
+    },
+    tech: ['React', 'TypeScript', 'Tailwind CSS', 'Mantine', 'Codeigniter', 'Mysql'],
+  },
+  {
     name: 'IndoQuran',
     category: 'Website',
     desc: 'Online quran with murotal audio features with 5 qori versions',
