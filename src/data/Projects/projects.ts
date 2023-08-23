@@ -2,7 +2,7 @@ import { Project } from './project';
 
 export const projects: Project[] = [
   {
-    name: 'Perpustakaan Desa Jayasampurna',
+    name: 'Desa Jayasampurna',
     category: 'Website',
     desc: 'the library in Jayasampurna village and the library in Gital which can be accessed on this website.',
     link: {
