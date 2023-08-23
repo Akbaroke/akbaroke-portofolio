@@ -2,6 +2,16 @@ import { Project } from './project';
 
 export const projects: Project[] = [
   {
+    name: 'Perpustakaan Desa Jayasampurna',
+    category: 'Website',
+    desc: 'Create library documentation in Jayasampurna Village and a digital library that can be accessed on this website.',
+    link: {
+      demo: 'https://www.perpusdigitaljayasampurna.com/',
+      repo: null,
+    },
+    tech: ['React', 'TypeScript', 'Tailwind CSS'],
+  },
+  {
     name: 'Tiket Bus id',
     category: 'Website',
     desc: 'bus ticket booking application that has features with admin and user views.',
