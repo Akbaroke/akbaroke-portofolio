@@ -4,7 +4,7 @@ export const projects: Project[] = [
   {
     name: 'Perpustakaan Desa Jayasampurna',
     category: 'Website',
-    desc: 'Create library documentation in Jayasampurna Village and a digital library that can be accessed on this website.',
+    desc: 'the library in Jayasampurna village and the library in Gital which can be accessed on this website.',
     link: {
       demo: 'https://www.perpusdigitaljayasampurna.com/',
       repo: null,
