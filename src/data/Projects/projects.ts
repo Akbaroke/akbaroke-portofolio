@@ -2,6 +2,16 @@ import { Project } from './project';
 
 export const projects: Project[] = [
   {
+    name: 'Pilihanku',
+    category: 'Website',
+    desc: ' This application aims to simplify the chairman election process in various contexts.',
+    link: {
+      demo: 'https://pilihanku.vercel.app/',
+      repo: 'https://github.com/Akbaroke/pemilu',
+    },
+    tech: ['Nextjs', 'TypeScript', 'Tailwind CSS', 'Redux', 'Mantine', 'Firestore'],
+  },
+  {
     name: 'Desa Jayasampurna',
     category: 'Website',
     desc: 'the library in Jayasampurna village and the library in Gital which can be accessed on this website.',
@@ -19,7 +29,7 @@ export const projects: Project[] = [
       demo: 'https://tiket-id.vercel.app/',
       repo: 'https://github.com/Akbaroke/ticket-order',
     },
-    tech: ['React', 'TypeScript', 'Tailwind CSS', 'Mantine', 'Codeigniter', 'Mysql'],
+    tech: ['React', 'TypeScript', 'Tailwind CSS', 'Mantine', 'Codeigniter', 'Mysql', 'Redux'],
   },
   {
     name: 'IndoQuran',
@@ -29,7 +39,7 @@ export const projects: Project[] = [
       demo: 'https://www.indoquran.my.id/',
       repo: 'https://github.com/Akbaroke/indoquran.my.id',
     },
-    tech: ['Nextjs', 'TypeScript', 'Tailwind CSS'],
+    tech: ['Nextjs', 'TypeScript', 'Tailwind CSS', 'Redux'],
   },
   {
     name: 'Chichat',
@@ -39,7 +49,7 @@ export const projects: Project[] = [
       demo: 'https://chichatt.vercel.app/',
       repo: 'https://github.com/Akbaroke/Chichat',
     },
-    tech: ['React', 'Typescript', 'Tailwind CSS', 'Firestore'],
+    tech: ['React', 'Typescript', 'Tailwind CSS', 'Firestore', 'Redux'],
   },
   {
     name: 'BCA Mobile Clone',
@@ -69,7 +79,7 @@ export const projects: Project[] = [
       demo: null,
       repo: 'https://github.com/Akbaroke/CattyTalks',
     },
-    tech: ['React', 'JavaScript', 'Socket', 'SCSS', 'Nodejs', 'Mysql'],
+    tech: ['React', 'JavaScript', 'Socket', 'SCSS', 'Nodejs', 'Mysql', 'Redux'],
   },
   {
     name: 'Simple Ecommerce',

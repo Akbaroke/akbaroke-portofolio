@@ -47,6 +47,11 @@ export const skills: Skill[] = [
     icon: 'react.svg',
   },
   {
+    name: 'Redux',
+    category: 'Framework/Library',
+    icon: 'redux.png',
+  },
+  {
     name: 'Nextjs',
     category: 'Framework/Library',
     icon: 'next.svg',
