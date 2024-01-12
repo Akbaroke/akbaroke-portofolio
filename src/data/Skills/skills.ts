@@ -36,11 +36,11 @@ export const skills: Skill[] = [
     category: 'Language',
     icon: 'java.svg',
   },
-  {
-    name: 'Dart',
-    category: 'Language',
-    icon: 'dart.svg',
-  },
+  // {
+  //   name: 'Dart',
+  //   category: 'Language',
+  //   icon: 'dart.svg',
+  // },
   {
     name: 'React',
     category: 'Framework/Library',
@@ -76,11 +76,11 @@ export const skills: Skill[] = [
     category: 'Framework/Library',
     icon: 'ci.svg',
   },
-  {
-    name: 'Flutter',
-    category: 'Framework/Library',
-    icon: 'flutter.svg',
-  },
+  // {
+  //   name: 'Flutter',
+  //   category: 'Framework/Library',
+  //   icon: 'flutter.svg',
+  // },
   {
     name: 'React Native',
     category: 'Framework/Library',

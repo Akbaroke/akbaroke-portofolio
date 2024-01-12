@@ -2,6 +2,23 @@ import { Project } from './project';
 
 export const projects: Project[] = [
   {
+    name: 'RealChat',
+    category: 'Website',
+    desc: 'a modern chat application that implements ai when communicating',
+    link: {
+      demo: 'https://realchat-2023.vercel.app/',
+      repo: 'https://github.com/Akbaroke/realchat',
+    },
+    tech: [
+      'React',
+      'TypeScript',
+      'Tailwind CSS',
+      'Redux',
+      'Mantine',
+      'Firestore',
+    ],
+  },
+  {
     name: 'Pilihanku',
     category: 'Website',
     desc: ' This application aims to simplify the chairman election process in various contexts.',
@@ -9,7 +26,14 @@ export const projects: Project[] = [
       demo: 'https://pilihanku.vercel.app/',
       repo: 'https://github.com/Akbaroke/pemilu',
     },
-    tech: ['Nextjs', 'TypeScript', 'Tailwind CSS', 'Redux', 'Mantine', 'Firestore'],
+    tech: [
+      'Nextjs',
+      'TypeScript',
+      'Tailwind CSS',
+      'Redux',
+      'Mantine',
+      'Firestore',
+    ],
   },
   {
     name: 'Desa Jayasampurna',
@@ -29,7 +53,15 @@ export const projects: Project[] = [
       demo: 'https://tiket-id.vercel.app/',
       repo: 'https://github.com/Akbaroke/ticket-order',
     },
-    tech: ['React', 'TypeScript', 'Tailwind CSS', 'Mantine', 'Codeigniter', 'Mysql', 'Redux'],
+    tech: [
+      'React',
+      'TypeScript',
+      'Tailwind CSS',
+      'Mantine',
+      'Codeigniter',
+      'Mysql',
+      'Redux',
+    ],
   },
   {
     name: 'IndoQuran',
