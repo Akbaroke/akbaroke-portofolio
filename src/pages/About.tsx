@@ -58,7 +58,7 @@ export default function About() {
           <Text size={42} weight="bold">
             Education
           </Text>
-          <Timeline active={1} mt="sm">
+          <Timeline active={3} mt="sm">
             <Timeline.Item
               title={
                 <Text weight="bold" size="lg" className="dark:text-gray-400">
@@ -77,6 +77,26 @@ export default function About() {
                 mt={4}
                 className="dark:text-gray-400">
                 2021 - present
+              </Text>
+            </Timeline.Item>
+            <Timeline.Item
+              title={
+                <Text weight="bold" size="lg" className="dark:text-gray-400">
+                  Front-End Engineer Career With ReactJS
+                </Text>
+              }>
+              <Text className="dark:text-gray-400">
+              Alterra Academy
+              </Text>
+              <Text size="md" className="dark:text-gray-400">
+              Frontend Division Team Leader
+              </Text>
+              <Text
+                size="sm"
+                color="dimmed"
+                mt={4}
+                className="dark:text-gray-400">
+                Aug - Des 2023
               </Text>
             </Timeline.Item>
             <Timeline.Item
@@ -105,30 +125,77 @@ export default function About() {
           <Text size={42} weight="bold">
             Work Experience
           </Text>
-          <Timeline active={0} mt="sm">
+          <Timeline active={4} mt="sm">
             <Timeline.Item
               title={
                 <Text weight="bold" size="lg" className="dark:text-gray-400">
-                  Freelancing
+                  Web Developer
                 </Text>
               }>
               <Text className="dark:text-gray-400">
-                PT. Metal Teknologi Indonesia
+                PT. Kurnia Ciptamoda Gemilang
               </Text>
               <List>
                 <List.Item className="dark:text-gray-400 list-disc">
-                  Create website ui designs
+                Performed frontend migration from desktop-based system to web-based with angular framework.
                 </List.Item>
                 <List.Item className="dark:text-gray-400 list-disc">
-                  website development by implementing the UI design that has
-                  been made
+                Performingeration with rest api.
                 </List.Item>
                 <List.Item className="dark:text-gray-400 list-disc">
-                  Deploy to the hosting server
+                Creating forms and validating components in the table and testing the system
                 </List.Item>
               </List>
               <Text size="sm" color="dimmed" mt={4}>
-                Aug 2022 - Sep 2022
+              Feb - Jun 2024
+              </Text>
+            </Timeline.Item>
+            <Timeline.Item
+              title={
+                <Text weight="bold" size="lg" className="dark:text-gray-400">
+                  Fullstack Developer
+                </Text>
+              }>
+              <Text className="dark:text-gray-400">
+              Mercy Chess Club
+              </Text>
+              <List>
+                <List.Item className="dark:text-gray-400 list-disc">
+                Create responsive UI/UX interface design.
+                </List.Item>
+                <List.Item className="dark:text-gray-400 list-disc">
+                Creating landing page and admin dashboard.
+                </List.Item>
+                <List.Item className="dark:text-gray-400 list-disc">
+                Create attendance system, payment history, student data and reports.
+                </List.Item>
+              </List>
+              <Text size="sm" color="dimmed" mt={4}>
+              Jul - Sep 2023
+              </Text>
+            </Timeline.Item>
+            <Timeline.Item
+              title={
+                <Text weight="bold" size="lg" className="dark:text-gray-400">
+                  Frontend Developer & UI Designer
+                </Text>
+              }>
+              <Text className="dark:text-gray-400">
+              PT Metal Teknologi Indonesia
+              </Text>
+              <List>
+                <List.Item className="dark:text-gray-400 list-disc">
+                Create responsive UI/UX interface design.
+                </List.Item>
+                <List.Item className="dark:text-gray-400 list-disc">
+                Implement UI/UX interface design into HTML, CSS and Javascript code.
+                </List.Item>
+                <List.Item className="dark:text-gray-400 list-disc">
+                Deploy the website to the production environment (live production hosting).
+                </List.Item>
+              </List>
+              <Text size="sm" color="dimmed" mt={4}>
+              Sep 2021
               </Text>
             </Timeline.Item>
           </Timeline>
@@ -142,7 +209,7 @@ export default function About() {
           <Box>
             You can read my resume{' '}
             <a
-              href="https://drive.google.com/file/d/1VQkip1m1-_znOygm3rsIui7vcd1dCYBP/view?usp=sharing"
+              href="https://drive.google.com/file/d/1lhU21riOcjwtklz96ZLUtQc-n0HCoJ1m/view"
               target="_blank"
               className="underline text-blue-400 cursor-pointer">
               here.

@@ -57,6 +57,11 @@ export const skills: Skill[] = [
     icon: 'next.svg',
   },
   {
+    name: 'Angular',
+    category: 'Framework/Library',
+    icon: 'angular.webp',
+  },
+  {
     name: 'Socket',
     category: 'Framework/Library',
     icon: 'socket.svg',
@@ -155,5 +160,25 @@ export const skills: Skill[] = [
     name: 'Figma',
     category: 'Tools',
     icon: 'figma.svg',
+  },
+  {
+    name: 'Github',
+    category: 'Tools',
+    icon: 'github.png',
+  },
+  {
+    name: 'Gitlab',
+    category: 'Tools',
+    icon: 'gitlab.webp',
+  },
+  {
+    name: 'Trello',
+    category: 'Tools',
+    icon: 'trello.webp',
+  },
+  {
+    name: 'Notion',
+    category: 'Tools',
+    icon: 'notion.png',
   },
 ];
